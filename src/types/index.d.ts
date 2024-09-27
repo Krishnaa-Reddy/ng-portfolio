@@ -16,7 +16,8 @@ declare interface GridItem    {
   titleClassName: string,
   img: string,
   spareImg: string;
-  component?: never;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  component: any;
 }
 
 declare interface Project {

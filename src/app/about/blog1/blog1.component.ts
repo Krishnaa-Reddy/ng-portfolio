@@ -1,5 +1,6 @@
-import { Component, Input, input } from '@angular/core';
-import { JsonPipe } from '@angular/common';
+import { JsonPipe } from "@angular/common";
+import { Component, Input } from "@angular/core";
+
 
 @Component({
   selector: 'blog1',

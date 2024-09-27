@@ -108,7 +108,8 @@ export const navItems = [
       img: "/b5.svg",
       spareImg: "/grid.svg",
       cols: 3,
-      rows: 4
+      rows: 4,
+      component: undefined
     },
     {
       id: 6,
