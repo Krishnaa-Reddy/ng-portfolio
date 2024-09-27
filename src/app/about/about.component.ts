@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnDestroy } from '@angular/core';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { gridItems } from '../../data';
 import { NgClass, NgComponentOutlet } from '@angular/common';
@@ -11,7 +11,7 @@ import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
   imports: [MatGridListModule, NgComponentOutlet, NgClass],
   templateUrl: './about.component.html',
 })
-export class AboutComponent {
+export class AboutComponent implements OnDestroy {
 
   items: GridItem[] = gridItems;
 

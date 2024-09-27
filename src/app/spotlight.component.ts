@@ -28,14 +28,14 @@ import { Component, ElementRef, HostListener, Input, OnDestroy, OnInit, Renderer
 
 export class SpotlightComponent implements OnInit, OnDestroy {
   //Best practices: Having default input values
-  @Input() color: string = 'rgba(255, 255, 255, 0.1)';
-  @Input() size: number = 300;
-  @Input() enabled: boolean = true;
+  @Input() color = 'rgba(255, 255, 255, 0.1)';
+  @Input() size = 300;
+  @Input() enabled = true;
 
-  containerStyle: { [key: string]: string } = {};
-  spotlightStyle: { [key: string]: string } = {};
-  private mouseX: number = 0;
-  private mouseY: number = 0;
+  containerStyle: Record<string, string> = {};
+  spotlightStyle: Record<string, string> = {};
+  private mouseX = 0;
+  private mouseY = 0;
   private animationFrameId: number | null = null;
 
   constructor(private elementRef: ElementRef, private renderer: Renderer2) {}

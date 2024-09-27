@@ -16,7 +16,7 @@ declare interface GridItem    {
   titleClassName: string,
   img: string,
   spareImg: string;
-  component?: any;
+  component?: never;
 }
 
 declare interface Project {
@@ -35,7 +35,7 @@ declare interface Company {
   nameImg: string;
 }
 
-declare type TitleHeader = {
+declare interface TitleHeader {
   title1: string;
   title2: string;
 }
