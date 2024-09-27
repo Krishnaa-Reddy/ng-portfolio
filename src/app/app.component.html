@@ -1,0 +1,25 @@
+
+<navbar></navbar>
+
+<om-gridpattern styleClass="bg-dark-grids"> 
+    <om-spotlight [animation]="true">
+        <hero></hero>
+    </om-spotlight>
+</om-gridpattern>
+
+<section class="absolute w-full h-full top-[80vh]">
+    <about id="about"/>
+    <projects id="projects">
+        <title-header [titleHeader]="titleHeaders['projects']"></title-header>
+    </projects>
+    <testimonials id="testimonials">
+        <title-header [titleHeader]="titleHeaders['testimonials']"></title-header>
+    </testimonials>
+    <work-experience id="workExperience">
+        <title-header [titleHeader]="titleHeaders['work-experience']"></title-header>
+    </work-experience>
+    <my-approaches>
+        <title-header [titleHeader]="titleHeaders['my-approaches']"></title-header>
+    </my-approaches>
+</section>
+

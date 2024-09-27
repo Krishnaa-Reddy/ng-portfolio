@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    --bg-dark-theme: rgb(14, 9, 29);
+    --bg-dark: #1d113c;
+    background-color: var(--bg-dark-theme);
+}
+html, body {
+   height: 100%;
+   scroll-behavior: smooth
+   }
+
+.bg-dark-grids {
+  @apply bg-[#1d113c] text-white;
+}
+
+.bg-dark-theme {
+    @apply bg-[#0e091d] text-white;
+}
+
+.bg-dark-icon {
+  @apply bg-[#2b2736] text-white;
+}
+
+
+
+.om-swapy .om-swapy-container {
+  gap: 1rem !important;
+}
+
+.heading {
+  @apply font-bold text-4xl md:text-5xl text-center text-white;
+}
+
+@layer base {
+  button {
+    @apply active:outline-none;
+  }
+}
+
+@layer utilities {
+
+
+  .black-gradient {
+    background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
+  }
+}
+
+.custom-ripple > .om-ripple-background, .custom-dotpattern {
+  height: -webkit-fill-available;
+}
+
+.om-dotpattern, om-dotpattern{
+  height: 100%;
+}
+
+.custom-ripple {
+  border: 1px solid;
+  border-radius: 1rem;
+  height: -webkit-fill-available;
+}
+
+.om-dotpattern {
+  border: 1px solid var(--bg-dark);
+  border-radius: 1rem;
+}

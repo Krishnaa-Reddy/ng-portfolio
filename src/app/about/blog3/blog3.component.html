@@ -1,0 +1,15 @@
+<div class="grid grid-cols-2">
+    <div class="flex flex-col justify-center items-center lg:items-start">
+        <p class="text-sm font-thin text-slate-400 row-span-2">{{item.description}} </p>
+        <p class="text-lg md:text-2xl lg:text-3xl">{{item.title}}</p>
+    </div>
+
+    <om-swapy class="text-sm font-thin">
+        @for (tech of techStacks; track $index) {
+            <div class="bg-[#2a2043] text-center p-2" #OmSwapyContent>
+                {{tech}}
+            </div>
+        }
+      </om-swapy>
+</div>
+

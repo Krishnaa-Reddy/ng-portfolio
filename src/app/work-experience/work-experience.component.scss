@@ -1,0 +1,44 @@
+
+
+.lamp-wrapper {
+    width: 100%;
+    height: 200px;
+  }
+
+//   .flickering-lamp {
+//     animation: om-flickering-lamp 5s infinite;
+
+//     @keyframes om-flickering-lamp {
+//       0%,
+//       20% {
+//         --om-lamp-color: rgba(34, 211, 238, 1); /* Long bright */
+//       }
+//       22% {
+//         --om-lamp-color: rgba(34, 211, 238, 0.8); /* Short flicker */
+//       }
+//       24% {
+//         --om-lamp-color: rgba(34, 211, 238, 1); /* Back to bright */
+//       }
+//       25%,
+//       45% {
+//         --om-lamp-color: rgba(34, 211, 238, 0.95); /* Middle long bright */
+//       }
+//       47% {
+//         --om-lamp-color: rgba(34, 211, 238, 0.8); /* Short flicker */
+//       }
+//       49% {
+//         --om-lamp-color: rgba(34, 211, 238, 0.95); /* Return to middle bright */
+//       }
+//       50%,
+//       70% {
+//         --om-lamp-color: rgba(34, 211, 238, 1); /* Long bright again */
+//       }
+//       72% {
+//         --om-lamp-color: rgba(34, 211, 238, 0.8); /* Another short flicker */
+//       }
+//       74%,
+//       100% {
+//         --om-lamp-color: rgba(34, 211, 238, 1); /* Long bright to end */
+//       }
+//     }
+//   }

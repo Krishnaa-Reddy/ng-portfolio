@@ -1,0 +1,15 @@
+<mat-grid-list cols="4" rowHeight="80px" gutterSize="1rem" class="my-4 mx-16 text-white">
+    @for (item of items; track item) {
+      <mat-grid-tile
+        class="border border-slate-700 rounded-2xl bg-cover bg-center bg-no-repeat bg-black bg-opacity-30"
+        [colspan]="item.cols"
+        [rowspan]="item.rows"
+        style="background-image: url('{{item.img}}');"
+        >
+        <div class="border w-full h-full border-slate-700 rounded-2xl relative text-3xl font-bold px-8 py-6">
+          <ng-container *ngComponentOutlet="item.component; inputs: {item: item}"></ng-container>
+        </div>
+
+      </mat-grid-tile>
+    }
+  </mat-grid-list>

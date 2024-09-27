@@ -1,0 +1,23 @@
+<div class="flip-card shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <om-ripple style="height: -webkit-fill-available;" [rippleBorderColor]="'rgba(255, 255, 255, 0.7)'"
+                [rippleColor]="'rgba(174, 174, 174, 0.54)'" styleClass="custom-ripple">
+                <div class="content">
+                    <h1>
+                        {{ card().title }}
+                    </h1>
+                </div>
+            </om-ripple>
+        </div>
+        <div class="flip-card-back">
+            <om-dotpattern styleClass="custom-dotpattern">
+                <div class="content">
+                    <h2 class="text-white text-2xl">
+                        {{card().content}}
+                    </h2>
+                </div>
+              </om-dotpattern>
+        </div>
+    </div>
+</div>

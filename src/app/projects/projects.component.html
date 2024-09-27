@@ -1,0 +1,8 @@
+<div class="pt-20">
+  <ng-content></ng-content>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-4 mx-14 my-4 lg:mx-16">
+    @for (project of projects; track $index) {
+        <project-card [project]="project"></project-card>
+    }
+  </div>
+</div>
