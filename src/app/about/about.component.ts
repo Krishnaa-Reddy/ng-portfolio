@@ -1,14 +1,14 @@
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { NgComponentOutlet } from '@angular/common';
 import { Component, inject, OnDestroy } from '@angular/core';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { gridItems } from '../../data';
-import { NgClass, NgComponentOutlet } from '@angular/common';
 import { Subject, takeUntil } from 'rxjs';
-import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
+import { gridItems } from '../../data';
 
 @Component({
   selector: 'about',
   standalone: true,
-  imports: [MatGridListModule, NgComponentOutlet, NgClass],
+  imports: [MatGridListModule, NgComponentOutlet],
   templateUrl: './about.component.html',
 })
 export class AboutComponent implements OnDestroy {
