@@ -25,7 +25,7 @@ declare interface Project {
   title: string;
   des: string;
   img: string;
-  iconLists: string[];
+  iconLists: {title: string, path: string}[];
   link: string;
 }
 
@@ -34,6 +34,14 @@ declare interface Company {
   name: string;
   img: string;
   nameImg: string;
+}
+
+declare interface Tech {
+  id: number;
+  name: string;
+  img: string;
+  nameImg: string;
+  type: 'frontend' | 'backend' | 'others';
 }
 
 declare interface TitleHeader {

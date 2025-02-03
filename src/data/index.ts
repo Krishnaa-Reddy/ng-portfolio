@@ -1,14 +1,13 @@
 import { Blog1Component } from "../app/about/blog1/blog1.component";
 import { Blog2Component } from "../app/about/blog2/blog2.component";
-import { Blog3Component } from "../app/about/blog3/blog3.component";
-import { Blog4Component } from "../app/about/blog4/blog4.component";
-import { Blog6Component } from "../app/about/blog6/blog6.component";
+
+export const EMAIL = 'kundhurukrishnareddy@gmail.com';
 
 export const navItems = [
-    { name: "About", link: "about" },
+    { name: "Home", link: "home" },
+    { name: "Experience", link: "experience" },
     { name: "Projects", link: "projects" },
-    { name: "Testimonials", link: "testimonials" },
-    { name: "Experience", link: "workExperience" },
+    { name: "About", link: "about" },
   ];
 
   export const features = [
@@ -46,20 +45,6 @@ export const navItems = [
   export const gridItems: GridItem[] = [
     {
       id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
-      description: "",
-      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-      imgClassName: "w-full h-full",
-      titleClassName: "justify-end",
-      img: "/b1.svg",
-      spareImg: "",
-      cols: 2,
-      rows: 4,
-      component: Blog1Component
-      
-    },
-    {
-      id: 2,
       title: "I'm very flexible with time zone communications",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
@@ -69,50 +54,10 @@ export const navItems = [
       spareImg: "",
       cols: 2,
       rows: 2,
-      component: Blog2Component
+      component: Blog1Component
     },
     {
-      id: 3,
-      title: "My tech stack",
-      description: "I constantly try to improve",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-      imgClassName: "",
-      titleClassName: "justify-center",
-      img: "",
-      spareImg: "",
-      cols: 2,
-      rows: 2,
-      component: Blog3Component
-    },
-    {
-      id: 4,
-      title: "Tech enthusiast with a passion for development.",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-start",
-      img: "/grid.svg",
-      spareImg: "/b4.svg",
-      cols: 1,
-      rows: 2,
-      component: Blog4Component
-    },
-  
-    {
-      id: 5,
-      title: "Currently building a JS Animation library",
-      description: "The Inside Scoop",
-      className: "md:col-span-3 md:row-span-2",
-      imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-      titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
-      spareImg: "/grid.svg",
-      cols: 3,
-      rows: 4,
-      component: undefined
-    },
-    {
-      id: 6,
+      id: 2,
       title: "Do you want to start a project together?",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
@@ -122,140 +67,230 @@ export const navItems = [
       spareImg: "",
       cols: 1,
       rows: 2,
-      component: Blog6Component
+      component: Blog2Component
     },
   ];
   
   export const projects : Project[] = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+      title: "MRV: Maturity Ruleset Visualization tool",
+      des: "Visualizes set of microservices and their latest successful jenkins build information. Each stage's information in a build in a well organized tabular view. With a well designed UI/UX.",
       img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      iconLists: [
+        { title: "Angular", path: "/angular.svg" },
+        { title: "TypeScript", path: "/ts.svg" },
+        { title: "RxJS", path: "/rxjs.svg" },
+        { title: "Java", path: "/java.svg" },
+        { title: "Spring Boot", path: "/spring-boot.svg" },
+        { title: "PostgreSQL", path: "/pg.svg" },
+        { title: "Jenkins", path: "/jenkins.svg" },
+        { title: "SonarQube", path: "/sonarqube.svg" },
+      ],
       link: "https://github.com/adrianhajdin?tab=repositories",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+      title: "DODA: DevOps Data Analytics dashboard",
+      des: "Built with a modern tech stack including Angular, Angular Material, and RxJS for a responsive and dynamic user interface. Leveraging the power of Elasticsearch for data management and a Django backend framework, DODA ensures robust performance. Daily, up-to-date pipeline deliveries are managed and triggered through Spinnaker.",
       img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+      iconLists: [
+        { title: "Angular", path: "/angular.svg" },
+        { title: "TypeScript", path: "/ts.svg" },
+        { title: "RxJS", path: "/rxjs.svg" },
+        { title: "Elastic Search", path: "/elasticsearch.svg" },
+        { title: "Python", path: "/python.svg" },
+        { title: "Django", path: "/django.svg" },
+      ],
       link: "https://github.com/adrianhajdin/zoom-clone",
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+      title: "NM IDP - Internal Developer Portal",
+      des: "Used Backstage by Spotify, a plugin-based, cloud-native React software solution, backed by PostgreSQL for the database.",
       img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+      iconLists: [
+        { title: "React", path: "/re.svg" },
+        { title: "TypeScript", path: "/ts.svg" },
+        { title: "Express", path: "/express.svg" },
+        { title: "Backstage", path: "/backstage.svg" },
+        { title: "Material UI", path: "/mui.svg" },
+      ],
       link: "https://github.com/adrianhajdin/ai_saas_app",
     },
     {
       id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      title: "Personal Portfolio",
+      des: "This is built using Angular 18 with signal-based reactivity, Tailwind CSS, and the NGX UI component library, which leverages Three.js for its animations.",
       img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      iconLists: [
+        { title: "Angular", path: "/angular.svg" },
+        { title: "RxJS", path: "/rxjs.svg" },
+        { title: "TypeScript", path: "/ts.svg" },
+        { title: "NGX UI", path: "/ngxui.png" },
+        { title: "Three.js", path: "/three.svg" },
+      ],
       link: "https://github.com/adrianhajdin/iphone",
     },
   ];
-  
-  export const testimonials = [
+
+  // export const companies : Company[] = [
+  //   {
+  //     id: 0,
+  //     name: "cloudinary",
+  //     img: "/cloud.svg",
+  //     nameImg: "/cloudName.svg",
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "appwrite",
+  //     img: "/app.svg",
+  //     nameImg: "/appName.svg",
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "HOSTINGER",
+  //     img: "/host.svg",
+  //     nameImg: "/hostName.svg",
+  //   },
+  //   {
+  //     id: 4,
+  //     name: "stream",
+  //     img: "/s.svg",
+  //     nameImg: "/streamName.svg",
+  //   },
+  //   {
+  //     id: 5,
+  //     name: "docker.",
+  //     img: "/dock.svg",
+  //     nameImg: "/dockerName.svg",
+  //   },
+  // ];
+
+  export const techs : Tech[] = [
     {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+      id: 0,
+      name: "Angular",
+      img: "/angular.svg",
+      nameImg: "/angularName.svg",
+      type: "frontend"
     },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-  ];
-  
-  export const companies : Company[] = [
     {
       id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
+      name: "React",
+      img: "/re.svg",
+      nameImg: "/reactName.svg",
+      type: "frontend"
     },
     {
       id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
+      name: "Java",
+      img: "/java.svg",
+      nameImg: "/javaName.svg",
+      type: "backend"
     },
     {
       id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
+      name: "Spring Boot",
+      img: "/spring-boot.svg",
+      nameImg: "/springName.svg",
+      type: "backend"
     },
     {
       id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
+      name: "Django",
+      img: "/django.svg",
+      nameImg: "/djangoName.svg",
+      type: "backend"
     },
     {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
+      id: 6,
+      name: "Node",
+      img: "/nodejs.svg",
+      nameImg: "/nodeName.svg",
+      type: "backend"
     },
+    {
+      id: 8,
+      name: "PostgreSQL",
+      img: "/pg.svg",
+      nameImg: "/pgName.svg",
+      type: "backend"
+    },
+    {
+      id: 7,
+      name: "Three.js",
+      img: "/three.svg",
+      nameImg: "/threeName.svg",
+      type: "frontend"
+    },
+    {
+      id: 9,
+      name: "TypeScript",
+      img: "/ts.svg",
+      nameImg: "/tsName.svg",
+      type: "frontend" // Can be used in both, but more commonly associated with frontend
+    },
+    {
+      id: 10,
+      name: "RxJS",
+      img: "/rxjs.svg",
+      nameImg: "/rxName.svg",
+      type: "frontend"
+    },
+    {
+      id: 11,
+      name: "Tailwind CSS",
+      img: "/tailwind.svg",
+      nameImg: "/tail.svg",
+      type: "frontend"
+    },
+    {
+      id: 12,
+      name: "Claude AI",
+      img: "/claude-ai.svg",
+      nameImg: "/claudeName.svg",
+      type: "others"
+    },
+    {
+      id: 13,
+      name: "Google Gemini",
+      img: "/google-gemini.svg",
+      nameImg: "/geminiName.svg",
+      type: "others"
+    },
+    {
+      id: 14,
+      name: "ChatGPT",
+      img: "/chatgpt.svg",
+      nameImg: "/chatgptName.svg",
+      type: "others"
+    },
+    {
+      id: 16,
+      name: "Deepseek",
+      img: "/deepseek.svg",
+      nameImg: "/deepseekName.svg",
+      type: "others"
+    },
+
   ];
-  
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Project Engineer - Wipro Ltd.",
+      desc: "Working on 3 different cross-platform projects built with Spring Boot & Angular, Python Django & Angular and Spotify's Backstage respectively. ",
       className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
-    },
-    {
-      id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
     },
     {
-      id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp3.svg",
-    },
-    {
-      id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      id: 2,
+      title: "Java Full Stack Developer",
+      desc: "Started my web development journey with Spring Boot & Angular, and worked on a few projects.",
       className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
+      thumbnail: "/exp1.svg",
     },
+
   ];
   
   export const socialMedia = [

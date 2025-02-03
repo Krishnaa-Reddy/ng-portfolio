@@ -1,16 +1,12 @@
-import { JsonPipe } from "@angular/common";
-import { Component, Input } from "@angular/core";
+import { Component } from "@angular/core";
+import { NgxThreeGlobeComponent } from "@omnedia/ngx-three-globe";
 
 
 @Component({
   selector: 'blog1',
   standalone: true,
-  imports: [JsonPipe],
+  imports: [NgxThreeGlobeComponent],
   templateUrl: './blog1.component.html',
-  styleUrl: './blog1.component.scss'
 })
 export class Blog1Component {
-
-  @Input() item !: GridItem;
-
 }

@@ -1,0 +1,37 @@
+<div class="pt-20">
+    <ng-content></ng-content>
+    <div>
+        <div class="flex flex-wrap justify-center gap-4 mt-8 text-white">
+          @for (item of types; track $index) {
+            <button 
+            (click)="updateTech(item.value)"
+            [ngClass]="[
+              item.classes ? item.classes : '',
+              item.value === type() ? 'bg-gray-800 border-gray-800' : 'bg-gray-600 border-gray-400',
+            ]" 
+            class="bg-transparent transition-all ease-in-out hover:bg-gray-800  text-white border font-semibold py-2 px-4">
+              {{item.label}}
+            </button>
+          }
+        </div>
+
+    </div>
+    <div class="flex flex-wrap justify-center gap-4 marquee-wrapper bg-[var(--bg-dark-theme)] w-[80%] mx-auto my-8">
+      <om-marquee animationDuration="40s" marqueeGap="40px">
+      @for( company of techsFiltered(); track $index) {
+        <div #OmMarqueeContent
+        [matTooltip]="company.name"
+        class="flex items-center space-x-4 border border-indigo-950 shadow-lg rounded-lg p-4 transition-transform transform hover:scale-105 duration-300 ease-in-out"
+      >
+        <img
+          [src]="company.img"
+          alt="{{ company.name }} logo"
+          class="w-16 h-16 object-contain"
+        />
+      </div>
+      }
+    </om-marquee>
+      </div>
+    <div>
+    </div>
+</div>

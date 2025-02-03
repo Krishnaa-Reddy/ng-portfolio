@@ -1,33 +1,24 @@
-import { Component } from '@angular/core';
-import { NgxTypewriterComponent } from '@omnedia/ngx-typewriter';
-import { MatButtonModule } from '@angular/material/button';
-import { NgxShineBorderComponent } from '@omnedia/ngx-shine-border';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
-import { NgxGridpatternComponent } from '@omnedia/ngx-gridpattern';
-import { NgxSwapyComponent } from '@omnedia/ngx-swapy';
-import { NgxWordPullupComponent } from '@omnedia/ngx-word-pullup';
-import { NavbarComponent } from '../navbar/navbar.component';
-import { SpotlightComponent } from '../spotlight.component';
+import { Component } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { bootstrapGithub } from '@ng-icons/bootstrap-icons';
+import { NgIcon, provideIcons } from '@ng-icons/core';
+import { NgxShineBorderComponent } from '@omnedia/ngx-shine-border';
+import { NgxTypewriterComponent } from '@omnedia/ngx-typewriter';
+
 
 @Component({
   selector: 'hero',
   standalone: true,
-  // imports: [NgxTypewriterComponent, MatButtonModule, NgxShineBorderComponent],
   imports: [
-    RouterOutlet,
-    NgxSwapyComponent,
-    SpotlightComponent,
     CommonModule,
-    NgxGridpatternComponent,
     NgxTypewriterComponent,
-    NgxWordPullupComponent,
     MatButtonModule,
     NgxShineBorderComponent,
-    NavbarComponent,
-    HeroComponent
+    NgIcon
   ],
   templateUrl: './hero.component.html',
+  viewProviders: [provideIcons({ bootstrapGithub })],
 })
 export class HeroComponent {
   features = [
