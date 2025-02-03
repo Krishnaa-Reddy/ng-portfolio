@@ -1,6 +1,8 @@
 import { Blog1Component } from "../app/about/blog1/blog1.component";
 import { Blog2Component } from "../app/about/blog2/blog2.component";
 
+export const EMAIL = 'kundhurukrishnareddy@gmail.com';
+
 export const navItems = [
     { name: "Home", link: "home" },
     { name: "Experience", link: "experience" },
@@ -73,69 +75,97 @@ export const navItems = [
     {
       id: 1,
       title: "MRV: Maturity Ruleset Visualization tool",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+      des: "Visualizes set of microservices and their latest successful jenkins build information. Each stage's information in a build in a well organized tabular view. With a well designed UI/UX.",
       img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      iconLists: [
+        { title: "Angular", path: "/angular.svg" },
+        { title: "TypeScript", path: "/ts.svg" },
+        { title: "RxJS", path: "/rxjs.svg" },
+        { title: "Java", path: "/java.svg" },
+        { title: "Spring Boot", path: "/spring-boot.svg" },
+        { title: "PostgreSQL", path: "/pg.svg" },
+        { title: "Jenkins", path: "/jenkins.svg" },
+        { title: "SonarQube", path: "/sonarqube.svg" },
+      ],
       link: "https://github.com/adrianhajdin?tab=repositories",
     },
     {
       id: 2,
       title: "DODA: DevOps Data Analytics dashboard",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+      des: "Built with a modern tech stack including Angular, Angular Material, and RxJS for a responsive and dynamic user interface. Leveraging the power of Elasticsearch for data management and a Django backend framework, DODA ensures robust performance. Daily, up-to-date pipeline deliveries are managed and triggered through Spinnaker.",
       img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+      iconLists: [
+        { title: "Angular", path: "/angular.svg" },
+        { title: "TypeScript", path: "/ts.svg" },
+        { title: "RxJS", path: "/rxjs.svg" },
+        { title: "Elastic Search", path: "/elasticsearch.svg" },
+        { title: "Python", path: "/python.svg" },
+        { title: "Django", path: "/django.svg" },
+      ],
       link: "https://github.com/adrianhajdin/zoom-clone",
     },
     {
       id: 3,
       title: "NM IDP - Internal Developer Portal",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+      des: "Used Backstage by Spotify, a plugin-based, cloud-native React software solution, backed by PostgreSQL for the database.",
       img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+      iconLists: [
+        { title: "React", path: "/re.svg" },
+        { title: "TypeScript", path: "/ts.svg" },
+        { title: "Express", path: "/express.svg" },
+        { title: "Backstage", path: "/backstage.svg" },
+        { title: "Material UI", path: "/mui.svg" },
+      ],
       link: "https://github.com/adrianhajdin/ai_saas_app",
     },
     {
       id: 4,
       title: "Personal Portfolio",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+      des: "This is built using Angular 18 with signal-based reactivity, Tailwind CSS, and the NGX UI component library, which leverages Three.js for its animations.",
       img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      iconLists: [
+        { title: "Angular", path: "/angular.svg" },
+        { title: "RxJS", path: "/rxjs.svg" },
+        { title: "TypeScript", path: "/ts.svg" },
+        { title: "NGX UI", path: "/ngxui.png" },
+        { title: "Three.js", path: "/three.svg" },
+      ],
       link: "https://github.com/adrianhajdin/iphone",
     },
   ];
 
-  export const companies : Company[] = [
-    {
-      id: 0,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
-    },
-    {
-      id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
-    },
-    {
-      id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
-    },
-  ];
+  // export const companies : Company[] = [
+  //   {
+  //     id: 0,
+  //     name: "cloudinary",
+  //     img: "/cloud.svg",
+  //     nameImg: "/cloudName.svg",
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "appwrite",
+  //     img: "/app.svg",
+  //     nameImg: "/appName.svg",
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "HOSTINGER",
+  //     img: "/host.svg",
+  //     nameImg: "/hostName.svg",
+  //   },
+  //   {
+  //     id: 4,
+  //     name: "stream",
+  //     img: "/s.svg",
+  //     nameImg: "/streamName.svg",
+  //   },
+  //   {
+  //     id: 5,
+  //     name: "docker.",
+  //     img: "/dock.svg",
+  //     nameImg: "/dockerName.svg",
+  //   },
+  // ];
 
   export const techs : Tech[] = [
     {
@@ -143,115 +173,113 @@ export const navItems = [
       name: "Angular",
       img: "/angular.svg",
       nameImg: "/angularName.svg",
+      type: "frontend"
     },
     {
       id: 1,
       name: "React",
       img: "/re.svg",
       nameImg: "/reactName.svg",
+      type: "frontend"
     },
     {
       id: 2,
       name: "Java",
       img: "/java.svg",
       nameImg: "/javaName.svg",
+      type: "backend"
     },
     {
       id: 3,
       name: "Spring Boot",
       img: "/spring-boot.svg",
       nameImg: "/springName.svg",
+      type: "backend"
     },
     {
       id: 4,
       name: "Django",
       img: "/django.svg",
       nameImg: "/djangoName.svg",
-    },
-    {
-      id: 5,
-      name: "Express",
-      img: "/express.svg",
-      nameImg: "/expressName.svg",
+      type: "backend"
     },
     {
       id: 6,
       name: "Node",
       img: "/nodejs.svg",
       nameImg: "/nodeName.svg",
+      type: "backend"
     },
     {
       id: 8,
       name: "PostgreSQL",
       img: "/pg.svg",
       nameImg: "/pgName.svg",
-    }
-    // add three js, typescript, rxjs, tailwind css
-
-    ,
+      type: "backend"
+    },
     {
       id: 7,
       name: "Three.js",
       img: "/three.svg",
       nameImg: "/threeName.svg",
+      type: "frontend"
     },
     {
       id: 9,
       name: "TypeScript",
       img: "/ts.svg",
       nameImg: "/tsName.svg",
+      type: "frontend" // Can be used in both, but more commonly associated with frontend
     },
     {
       id: 10,
       name: "RxJS",
       img: "/rxjs.svg",
       nameImg: "/rxName.svg",
+      type: "frontend"
     },
     {
       id: 11,
       name: "Tailwind CSS",
-      img: "/tailwind-css.svg",
-      nameImg: "/tailName.svg",
+      img: "/tailwind.svg",
+      nameImg: "/tail.svg",
+      type: "frontend"
     },
-    // add ai tools claude ai, google gemini, chatgpt, github
     {
       id: 12,
       name: "Claude AI",
       img: "/claude-ai.svg",
       nameImg: "/claudeName.svg",
+      type: "others"
     },
     {
       id: 13,
       name: "Google Gemini",
       img: "/google-gemini.svg",
       nameImg: "/geminiName.svg",
+      type: "others"
     },
     {
       id: 14,
       name: "ChatGPT",
       img: "/chatgpt.svg",
       nameImg: "/chatgptName.svg",
+      type: "others"
     },
-    {
-      id: 15,
-      name: "GitHub",
-      img: "/github.svg",
-      nameImg: "/githubName.svg",
-    },
-    // add deepseek
     {
       id: 16,
       name: "Deepseek",
       img: "/deepseek.svg",
       nameImg: "/deepseekName.svg",
+      type: "others"
     },
+
   ];
-  
   export const workExperience = [
     {
       id: 1,
       title: "Project Engineer - Wipro Ltd.",
-      desc: "Worked on 3 different cross-platform projects built with Spring Boot & Angular, Python Django & Angular and Spotify's Backstage respectively. ",
+      desc: "Working on 3 different cross-platform projects built with Spring Boot & Angular, Python Django & Angular and Spotify's Backstage respectively. ",
       className: "md:col-span-2",
       thumbnail: "/exp2.svg",
     },

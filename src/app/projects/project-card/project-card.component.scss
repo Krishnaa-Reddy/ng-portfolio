@@ -1,6 +1,10 @@
 :host {
   display: flex;
   justify-content: center;
+  .mat-mdc-tooltip-show .mat-mdc-tooltip-surface {
+    text-align: left;
+    max-width: 420px;
+  }
 }
 
 .parent {
