@@ -3,45 +3,23 @@
 
 <om-gridpattern styleClass="bg-dark-grids"> 
     <om-spotlight [animation]="true">
-        <hero></hero>
+        <hero id="home"></hero>
     </om-spotlight>
 </om-gridpattern>
 
 <section class="absolute w-full h-full top-[80vh]">
-    <about id="about"/>
+    <work-experience id="experience">
+        <title-header [titleHeader]="titleHeaders['work-experience']"></title-header>
+    </work-experience>
     <projects id="projects">
         <title-header [titleHeader]="titleHeaders['projects']"></title-header>
     </projects>
-    <testimonials id="testimonials">
-        <title-header [titleHeader]="titleHeaders['testimonials']"></title-header>
-    </testimonials>
-    <work-experience id="workExperience">
-        <title-header [titleHeader]="titleHeaders['work-experience']"></title-header>
-    </work-experience>
-
-    <footer class=" text-white py-4">
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
-          <div class="mb-4 md:mb-0 text-sm">
-            © 2025 YourName. All Rights Reserved.
-          </div>
-          <div class="flex space-x-4">
-            <a href="https://github.com/your-profile" target="_blank" aria-label="GitHub" class="hover:text-blue-400">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://linkedin.com/in/your-profile" target="_blank" aria-label="LinkedIn" class="hover:text-blue-400">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://twitter.com/your-profile" target="_blank" aria-label="Twitter" class="hover:text-blue-400">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://instagram.com/your-profile" target="_blank" aria-label="Instagram" class="hover:text-blue-400">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </footer>
+    <tech-stack id="tech-stack">
+        <title-header [titleHeader]="titleHeaders['tech-stack']"></title-header>
+    </tech-stack>
+    <about id="about"> 
+        <title-header [titleHeader]="titleHeaders['about']"></title-header>
+    </about>
+    <ng-footer></ng-footer>
 </section>
-
-
-  
 

@@ -1,3 +1,13 @@
-<h1 class="text-lg md:text-2xl lg:text-3xl">
-    {{ item.title }}
-</h1>
+
+<div class="text-lg md:text-2xl min-h-40 overflow-hidden relative">
+    <h1 class="text-center"> I'm very flexible with time zone communications</h1>
+    <om-three-globe
+    class="absolute -top-4 left-0 grid justify-center w-[-webkit-fill-available]"
+    [globeConfig]="{
+      globeColor: '#11263f',
+      autoRotateSpeed: 0.4,
+    }"
+    globeSize="500px"
+    [arcAndRingColors]="['#ff6b6b', '#f06595', '#faa2c1']">
+    </om-three-globe>
+</div>

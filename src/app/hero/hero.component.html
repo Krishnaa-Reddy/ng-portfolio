@@ -1,17 +1,23 @@
 <div class="flex text-white h-[80vh] justify-center relative z-10">
     <div class="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col justify-center items-center">
-        <h2 class="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80 ">
-            Dynamic web magic with Angular 18
+        <h2 class="uppercase tracking-widest text-sm text-center text-blue-100 max-w-96 ">
+            Hello there, I'm Krishna here!👋
         </h2>
         <om-typewriter [@fadeIn] 
         class="font-bold mb-8 text-center text-[40px] md:text-5xl lg:text-6xl " 
         [disableLoop]="true"
-        [words]="['Transforming Concepts into Seamless Experiences']"
+        [words]="['Learning and Exploring new technologies']"
         ></om-typewriter>
-        <p class="text-center text-gray-300 md:tracking-wider mb-4 text-sm md:text-lg lg:text-2l" >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="text-center text-gray-300 md:tracking-wider mb-4 text-sm md:text-md" >
+            Checkout my resume for more details about me.
+        </p>
 
         <om-shine-border borderRadius="9999px">
-        <button class="border-none py-2 px-8">Resume</button>
+        <button class="border-none py-2 px-8  font-mono">
+            <a href="https://docs.google.com/document/d/13LO0kBbXOLRtODlZWPGIgd3n7YeNQbzfsh4y726Yv_o/edit?usp=sharing" target="_blank">
+                Resume
+            </a>
+        </button>
         </om-shine-border>
     </div>
 </div> 

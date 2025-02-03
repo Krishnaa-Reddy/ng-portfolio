@@ -36,6 +36,13 @@ declare interface Company {
   nameImg: string;
 }
 
+declare interface Tech {
+  id: number;
+  name: string;
+  img: string;
+  nameImg: string;
+}
+
 declare interface TitleHeader {
   title1: string;
   title2: string;
