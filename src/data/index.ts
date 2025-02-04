@@ -63,7 +63,7 @@ export const navItems = [
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-      img: "/gradient.png",
+      img: "gradient.png",
       spareImg: "",
       cols: 1,
       rows: 2,
@@ -76,16 +76,16 @@ export const navItems = [
       id: 1,
       title: "MRV: Maturity Ruleset Visualization tool",
       des: "Visualizes set of microservices and their latest successful jenkins build information. Each stage's information in a build in a well organized tabular view. With a well designed UI/UX.",
-      img: "/p1.svg",
+      img: "p1.svg",
       iconLists: [
-        { title: "Angular", path: "/angular.svg" },
-        { title: "TypeScript", path: "/ts.svg" },
-        { title: "RxJS", path: "/rxjs.svg" },
-        { title: "Java", path: "/java.svg" },
-        { title: "Spring Boot", path: "/spring-boot.svg" },
-        { title: "PostgreSQL", path: "/pg.svg" },
-        { title: "Jenkins", path: "/jenkins.svg" },
-        { title: "SonarQube", path: "/sonarqube.svg" },
+        { title: "Angular", path: "angular.svg" },
+        { title: "TypeScript", path: "ts.svg" },
+        { title: "RxJS", path: "rxjs.svg" },
+        { title: "Java", path: "java.svg" },
+        { title: "Spring Boot", path: "spring-boot.svg" },
+        { title: "PostgreSQL", path: "pg.svg" },
+        { title: "Jenkins", path: "jenkins.svg" },
+        { title: "SonarQube", path: "sonarqube.svg" },
       ],
       link: "https://github.com/adrianhajdin?tab=repositories",
     },
@@ -93,14 +93,14 @@ export const navItems = [
       id: 2,
       title: "DODA: DevOps Data Analytics dashboard",
       des: "Built with a modern tech stack including Angular, Angular Material, and RxJS for a responsive and dynamic user interface. Leveraging the power of Elasticsearch for data management and a Django backend framework, DODA ensures robust performance. Daily, up-to-date pipeline deliveries are managed and triggered through Spinnaker.",
-      img: "/p2.svg",
+      img: "p2.svg",
       iconLists: [
-        { title: "Angular", path: "/angular.svg" },
-        { title: "TypeScript", path: "/ts.svg" },
-        { title: "RxJS", path: "/rxjs.svg" },
-        { title: "Elastic Search", path: "/elasticsearch.svg" },
-        { title: "Python", path: "/python.svg" },
-        { title: "Django", path: "/django.svg" },
+        { title: "Angular", path: "angular.svg" },
+        { title: "TypeScript", path: "ts.svg" },
+        { title: "RxJS", path: "rxjs.svg" },
+        { title: "Elastic Search", path: "elasticsearch.svg" },
+        { title: "Python", path: "python.svg" },
+        { title: "Django", path: "django.svg" },
       ],
       link: "https://github.com/adrianhajdin/zoom-clone",
     },
@@ -108,13 +108,13 @@ export const navItems = [
       id: 3,
       title: "NM IDP - Internal Developer Portal",
       des: "Used Backstage by Spotify, a plugin-based, cloud-native React software solution, backed by PostgreSQL for the database.",
-      img: "/p3.svg",
+      img: "p3.svg",
       iconLists: [
-        { title: "React", path: "/re.svg" },
-        { title: "TypeScript", path: "/ts.svg" },
-        { title: "Express", path: "/express.svg" },
-        { title: "Backstage", path: "/backstage.svg" },
-        { title: "Material UI", path: "/mui.svg" },
+        { title: "React", path: "re.svg" },
+        { title: "TypeScript", path: "ts.svg" },
+        { title: "Express", path: "express.svg" },
+        { title: "Backstage", path: "backstage.svg" },
+        { title: "Material UI", path: "mui.svg" },
       ],
       link: "https://github.com/adrianhajdin/ai_saas_app",
     },
@@ -122,155 +122,122 @@ export const navItems = [
       id: 4,
       title: "Personal Portfolio",
       des: "This is built using Angular 18 with signal-based reactivity, Tailwind CSS, and the NGX UI component library, which leverages Three.js for its animations.",
-      img: "/p4.svg",
+      img: "p4.svg",
       iconLists: [
-        { title: "Angular", path: "/angular.svg" },
-        { title: "RxJS", path: "/rxjs.svg" },
-        { title: "TypeScript", path: "/ts.svg" },
-        { title: "NGX UI", path: "/ngxui.png" },
-        { title: "Three.js", path: "/three.svg" },
+        { title: "Angular", path: "angular.svg" },
+        { title: "RxJS", path: "rxjs.svg" },
+        { title: "TypeScript", path: "ts.svg" },
+        { title: "NGX UI", path: "ngxui.png" },
+        { title: "Three.js", path: "three.svg" },
       ],
       link: "https://github.com/adrianhajdin/iphone",
     },
   ];
 
-  // export const companies : Company[] = [
-  //   {
-  //     id: 0,
-  //     name: "cloudinary",
-  //     img: "/cloud.svg",
-  //     nameImg: "/cloudName.svg",
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "appwrite",
-  //     img: "/app.svg",
-  //     nameImg: "/appName.svg",
-  //   },
-  //   {
-  //     id: 3,
-  //     name: "HOSTINGER",
-  //     img: "/host.svg",
-  //     nameImg: "/hostName.svg",
-  //   },
-  //   {
-  //     id: 4,
-  //     name: "stream",
-  //     img: "/s.svg",
-  //     nameImg: "/streamName.svg",
-  //   },
-  //   {
-  //     id: 5,
-  //     name: "docker.",
-  //     img: "/dock.svg",
-  //     nameImg: "/dockerName.svg",
-  //   },
-  // ];
-
   export const techs : Tech[] = [
     {
       id: 0,
       name: "Angular",
-      img: "/angular.svg",
-      nameImg: "/angularName.svg",
+      img: "angular.svg",
+      nameImg: "angularName.svg",
       type: "frontend"
     },
     {
       id: 1,
       name: "React",
-      img: "/re.svg",
-      nameImg: "/reactName.svg",
+      img: "re.svg",
+      nameImg: "reactName.svg",
       type: "frontend"
     },
     {
       id: 2,
       name: "Java",
-      img: "/java.svg",
-      nameImg: "/javaName.svg",
+      img: "java.svg",
+      nameImg: "javaName.svg",
       type: "backend"
     },
     {
       id: 3,
       name: "Spring Boot",
-      img: "/spring-boot.svg",
-      nameImg: "/springName.svg",
+      img: "spring-boot.svg",
+      nameImg: "springName.svg",
       type: "backend"
     },
     {
       id: 4,
       name: "Django",
-      img: "/django.svg",
-      nameImg: "/djangoName.svg",
+      img: "django.svg",
+      nameImg: "djangoName.svg",
       type: "backend"
     },
     {
       id: 6,
       name: "Node",
-      img: "/nodejs.svg",
-      nameImg: "/nodeName.svg",
+      img: "nodejs.svg",
+      nameImg: "nodeName.svg",
       type: "backend"
     },
     {
       id: 8,
       name: "PostgreSQL",
-      img: "/pg.svg",
-      nameImg: "/pgName.svg",
+      img: "pg.svg",
+      nameImg: "pgName.svg",
       type: "backend"
     },
     {
       id: 7,
       name: "Three.js",
-      img: "/three.svg",
-      nameImg: "/threeName.svg",
+      img: "three.svg",
+      nameImg: "threeName.svg",
       type: "frontend"
     },
     {
       id: 9,
       name: "TypeScript",
-      img: "/ts.svg",
-      nameImg: "/tsName.svg",
-      type: "frontend" // Can be used in both, but more commonly associated with frontend
+      img: "ts.svg",
+      nameImg: "tsName.svg",
+      type: "frontend"
     },
     {
       id: 10,
       name: "RxJS",
-      img: "/rxjs.svg",
-      nameImg: "/rxName.svg",
+      img: "rxjs.svg",
+      nameImg: "rxName.svg",
       type: "frontend"
     },
     {
       id: 11,
       name: "Tailwind CSS",
-      img: "/tailwind.svg",
-      nameImg: "/tail.svg",
+      img: "tailwind.svg",
+      nameImg: "tail.svg",
       type: "frontend"
     },
     {
       id: 12,
       name: "Claude AI",
-      img: "/claude-ai.svg",
-      nameImg: "/claudeName.svg",
+      img: "claude-ai.svg",
+      nameImg: "claudeName.svg",
       type: "others"
     },
     {
       id: 13,
       name: "Google Gemini",
-      img: "/google-gemini.svg",
-      nameImg: "/geminiName.svg",
+      img: "google-gemini.svg",
+      nameImg: "geminiName.svg",
       type: "others"
     },
     {
       id: 14,
       name: "ChatGPT",
-      img: "/chatgpt.svg",
-      nameImg: "/chatgptName.svg",
+      img: "chatgpt.svg",
+      nameImg: "chatgptName.svg",
       type: "others"
     },
     {
       id: 16,
       name: "Deepseek",
-      img: "/deepseek.svg",
-      nameImg: "/deepseekName.svg",
+      img: "deepseek.svg",
+      nameImg: "deepseekName.svg",
       type: "others"
     },
 
@@ -281,14 +248,14 @@ export const navItems = [
       title: "Project Engineer - Wipro Ltd.",
       desc: "Working on 3 different cross-platform projects built with Spring Boot & Angular, Python Django & Angular and Spotify's Backstage respectively. ",
       className: "md:col-span-2",
-      thumbnail: "/exp2.svg",
+      thumbnail: "exp2.svg",
     },
     {
       id: 2,
       title: "Java Full Stack Developer",
       desc: "Started my web development journey with Spring Boot & Angular, and worked on a few projects.",
       className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
+      thumbnail: "exp1.svg",
     },
 
   ];
@@ -296,14 +263,14 @@ export const navItems = [
   export const socialMedia = [
     {
       id: 1,
-      img: "/git.svg",
+      img: "git.svg",
     },
     {
       id: 2,
-      img: "/twit.svg",
+      img: "twit.svg",
     },
     {
       id: 3,
-      img: "/link.svg",
+      img: "link.svg",
     },
   ];

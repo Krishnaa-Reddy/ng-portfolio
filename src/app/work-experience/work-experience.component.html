@@ -5,7 +5,7 @@
         @for (experience of workExperience; track $index) {
         <div class="flex flex-col bg-dark-theme border border-slate-800 rounded-3xl shadow-lg p-6 transition-transform">
             <div class="flex items-center mb-4">
-                <img src="/exp2.svg" alt="Experience Thumbnail"
+                <img [src]="experience.thumbnail" alt="Experience Thumbnail"
                     class="w-16 h-16 object-cover rounded-full mr-4" />
                 <h2 class="text-xl font-bold">{{ experience.title }}</h2>
             </div>
